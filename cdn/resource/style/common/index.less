@@ -1,0 +1,40 @@
+@import './reset' ;
+.container, .container-wrap{
+    height: 100% ;
+    &.container{
+        background-color: #FFF ;
+        // border-left: 1px solid #c9c9c9 ;
+        // border-right: 1px solid #c9c9c9 ;
+    }
+    &.container-wrap{
+        background-color: #f7f7f7;
+    }
+}
+.pager-appear {
+    transform: translateX(100%);
+    opacity: 0;
+    &.pager-appear-active{
+        opacity: 1 ;
+        transform: translateX(0);
+        transition: all linear .3s ;
+    }
+}
+
+.pager-enter {
+    transform: translateX(100%);
+    opacity: 0;
+    &.pager-enter-active{
+        opacity: 1 ;
+        transform: translateX(0);
+        transition: all linear .3s ;
+    }
+}
+.pager-leave {
+    transform: translateX(100%);
+    opacity: 0;
+    &.pager-leave-active{
+        opacity: 1 ;
+        transform: translateX(0);
+        transition: all linear .3s ;
+    }
+}
