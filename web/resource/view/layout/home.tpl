@@ -3,7 +3,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<meta charset="utf-8">
-		<title>赛尔理财</title>
+		<title>CMS</title>
 		<link rel="stylesheet" type="text/css" href="/public/style.css?v={{cdn.cssVersion}}">
 		{% block style %}{% endblock %}
 	</head>

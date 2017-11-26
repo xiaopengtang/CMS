@@ -7,10 +7,10 @@ const CDN = require('../cdn.config')
 const path = require('path')
 
 module.exports = merge(base, {
-	'entry': path.resolve(__dirname,'../resource/server.js'),
+	'entry': path.resolve(__dirname,'../web/server.js'),
 	'output': {
 		'library': '[name]',
-		'libraryTarget': 'umd',
+		'libraryTarget': 'commonjs',
 		'filename': '[name].js',
 		'publicPath': '',
 		'path': CDN.COMPONENT_PATH
@@ -45,5 +45,5 @@ module.exports = merge(base, {
 		    }
 		]
 	},
-	'externals': 'mobx-react mobx react react-router-dom react-dom react-dom/server prop-types antd-mobile react-addons-css-transition-group'.split(' ')
+	'externals': 'mobx-react mobx react react-router-dom react-dom react-dom/server prop-types antd react-addons-css-transition-group'.split(' ')
 })
